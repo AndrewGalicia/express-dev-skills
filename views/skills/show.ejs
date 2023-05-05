@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
 </head>
-<body>
+ <body>
     <h1><%= skills.skill %></h1>
+    <form action="/skills/<%=skills.id %>?_method=DELETE" class-"delete-form" method="POST">
+        <button type="submit">delete</button>
+    </form>
 </body>
 </html>
+
+
+
